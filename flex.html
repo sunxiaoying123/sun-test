@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .Media {
+        display: flex;
+        align-items: flex-start;
+    }
+        
+    .Media-figure {
+        margin-right: 1em;
+        width: 200px;
+        height: 200px;
+    }
+        
+    .Media-body {
+        flex: 1;
+    }
+    .Grid {
+        display: flex;
+    }
+    
+    .Grid-cell {
+        flex: 1;
+        border: 1px solid #ddd;
+    }
+    
+    .Grid-cell.u-full {
+        flex: 0 0 100%;
+    }
+    
+    .Grid-cell.u-1of2 {
+        flex: 0 0 50%;
+    }
+    
+    .Grid-cell.u-1of3 {
+        flex: 0 0 33.3333%;
+    }
+    
+    .Grid-cell.u-1of4 {
+        flex: 0 0 25%;
+    }
+    .InputAddOn {
+        display: flex;
+    }
+    
+    .InputAddOn-field {
+        flex: 1;
+    }
+    .parent {
+    width: 200px;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    }
+    
+    .child {
+    box-sizing: border-box;
+    background-color: white;
+    flex: 0 0 25%;
+    height: 50px;
+    border: 1px solid red;
+    }
+
+
+
+</style>
+<body>
+    <div class="Media">
+        <img class="Media-figure" src="/Users/sunxiaoying/Documents/bg的副本/bg-2.jpg" alt="">
+        <p class="Media-body">oao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfksdkf</p>
+      </div>
+    <div class="Media">
+        <p class="Media-body">oao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfksdkf</p>
+        <img class="Media-figure" src="/Users/sunxiaoying/Documents/bg的副本/bg-2.jpg" alt="">
+    </div>
+    <div class="Media">
+        <img class="Media-figure" src="/Users/sunxiaoying/Documents/bg的副本/bg-2.jpg" alt="">
+        <p class="Media-body">oao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfoao as yiaxeiowkfksdf ;kasd fnksndfksd zfksdkf</p>
+      </div>
+      <div class="Grid">
+        <div class="Grid-cell u-1of2">1/2</div>
+        <div class="Grid-cell">auto</div>
+        <div class="Grid-cell">auto</div>
+      </div>
+      <div class="Grid">
+        <div class="Grid-cell">auto</div>
+        <div class="Grid-cell u-1of3">1/3</div>
+      </div>
+      <div class="Grid">
+        <div class="Grid-cell u-1of4">1/4</div>
+        <div class="Grid-cell">auto</div>
+        <div class="Grid-cell u-1of3">1/3</div>
+      </div>
+
+      <div class="InputAddOn">
+        <span class="InputAddOn-item">左侧</span>
+        <input class="InputAddOn-field">
+        <button class="InputAddOn-item">搜索</button>
+      </div>
+      <div class="parent">
+          <div class="child"></div>
+          <div class="child"></div>
+          <div class="child"></div>
+          <div class="child"></div>
+          <div class="child"></div>
+          <div class="child"></div>
+          <div class="child"></div>
+          <div class="child"></div>
+          <div class="child"></div>
+      </div>
+</body>
+</html>
