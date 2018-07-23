@@ -4,7 +4,7 @@ function SelfVue (data, el, exp) {
 
     Object.keys(data).forEach(function(key) {
         self.proxyKeys(key);
-        console.log('key',self.data)
+        // console.log('key',self.data, data.__proto__,self)
     });
 
     observe(data);
