@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BFC效应</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height:200px;
+        background: red;
+        margin: 20px;
+    }
+    .wrap{
+        overflow: hidden;
+    }
+    .left{
+        float: left;
+    }
+    .content{
+        height: 300px;
+        background: blue;
+        margin-top: 20px;
+    }
+
+    .outer{
+        /* overflow: hidden; 该句保证外层是BFC布局 */
+        float: left;/*同上*/
+        width: 100%;
+        border: 5px solid #ddd;
+    }
+    .inner{
+        float: left;
+        width: 200px;
+        height: 300px;
+        border: 5px solid red;
+    }
+</style>
+<body>
+    <h3>以下是BFC的三种效果</h3>
+    <!-- margin重叠 -->
+    <h4>1、margin重叠</h4>
+    <div class="box"></div>
+    <div class="wrap">
+            <div class="box"></div>
+    </div>
+
+    <h4>2、浮动影响布局</h4>
+    <div class="left box"></div>
+    <div class="wrap">
+            <div class="content"></div>
+    </div>
+   
+    <h4>3、高度计算包括浮动元素</h4>
+    <div class="outer">
+        <div class="inner"></div>
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div>
+    
+</body>
+</html>

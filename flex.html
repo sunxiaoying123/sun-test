@@ -69,6 +69,58 @@
     border: 1px solid red;
     }
 
+    .sun-flex{
+        display: flex;
+    }
+    /* flex */
+    .left,.right{
+        width: 200px;
+        height: 200px;
+        background: red;
+        border: 1px solid #ddd;
+        margin: 10px;
+    }
+    .flex{
+        flex: 1;
+    }
+    .center{
+        height: 200px;
+        background: blue;
+        margin: 10px;
+        border: 1px solid #ddd;
+    }
+    /* float */
+    .wrap{
+        overflow: hidden;
+    }
+    .float-left{
+        float: left;
+    }
+    .float-right{
+        float: right;
+    }
+    /* position */
+    .position{
+        position: relative;
+    }
+    .p-left,.p-right{
+        position: absolute;
+    }
+    .p-left{
+        left: 0;
+    }
+    .p-right{
+        right: 0;
+    }
+    .p-center{
+        margin: 10px 230px;
+    }
+    /* 圣杯法 */
+    #wrap{ width: 100%;height: 100px; background-color: #fff;float: left;}
+    #wrap #center{ margin:0 210px; height: 100px;background-color: #ffe6b8; }
+    #left_margin,#right_margin{ float: left;width: 200px;height: 100px;background-color: darkorange }
+    #left_margin {margin-left: -100%; background-color: lightpink}
+    #right_margin{margin-left: -200px;}
 
 
 </style>
@@ -115,6 +167,35 @@
           <div class="child"></div>
           <div class="child"></div>
           <div class="child"></div>
+          <div class="child"></div>
+          <div class="child"></div>
       </div>
-</body>
+      <!-- flex实现三列布局 -->
+      <div class="sun-flex">
+          <div class="left"></div>
+          <div class="center flex"></div>
+          <div class="right"></div>
+      </div>
+      <!-- float实现三列布局 -->
+      <div class="sun-float">
+          <div class="float-left left"></div>
+          <div class="float-right left" ></div>
+          <div class="wrap">
+            <div class="float-center center"></div>
+          </div>
+      </div>
+      <!-- 绝对定位实现三列布局 -->
+      <div class="position">
+            <h3 style="margin:20px 0 0;">实现三列宽度自适应布局</h3>
+          <div class="p-left left"></div>
+          <div class="p-right right"></div>
+          <div class="p-center center"></div>
+      </div>
+      <h3>使用margin负值法进行布局</h3>
+		<div id = "wrap">
+			<div id = "center"></div>
+		</div>
+		<div id = "left_margin"></div>
+		<div id = "right_margin"></div>
+
 </html>
